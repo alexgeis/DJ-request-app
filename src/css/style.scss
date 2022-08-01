@@ -1,5 +1,5 @@
 $font-stack: Calibri, sans-serif;
-$primary-color: #b22222;
+$primary-color: #ffb342;
 $secondary-color: firebrick;
 $primary-dark: #000;
 $secondary-dark: #000;
@@ -54,7 +54,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   overflow: hidden;
-  background-color: #333;  
+  background-color: $primary-dark;  
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -63,7 +63,7 @@ body {
 .nav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: $primary-light;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -71,19 +71,19 @@ body {
 }
 
 .nav a:hover{
-  background-color: #4CAF50;
+  background-color: $primary-color;
 }
 
 .nav a.active{
-  background-color: #f2f2f2;
-  border-bottom: #4CAF50;
+  background-color: $primary-light;
+  border-bottom: $primary-color;
 }
 
 /* CONTENT */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid $secondary-light;
     border-top: none;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
