@@ -49,3 +49,46 @@ $secondary-light: rgb(225, 225, 225);
 body {
     font-family: $font-stack;
 }
+/* TAB MENU */
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover{
+  background-color: #4CAF50;
+}
+
+.nav a.active{
+  background-color: #f2f2f2;
+  border-bottom: #4CAF50;
+}
+
+/* CONTENT */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+from {opacity: 0;}
+to {opacity: 1;}
+}
