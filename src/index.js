@@ -1,5 +1,5 @@
 import "./css/style.scss";
-import { domCreate } from "./js/helpers/domCreate";
+import domCreate from "./js/helpers/domCreate";
 
 const navEl = domCreate("nav", ["nav"]);
 const tabLink1 = domCreate("a", ["tab-link"], { id: "tab-link-1", href: "#" });
