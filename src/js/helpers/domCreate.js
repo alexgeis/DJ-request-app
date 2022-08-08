@@ -20,4 +20,4 @@ function domCreate(arg1, arg2, arg3) {
 	return element;
 }
 
-export default { domCreate };
+export default domCreate;
