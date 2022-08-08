@@ -20,8 +20,5 @@ function activateTab(event) {
 	activeTab.style.display = "block";
 	activeTab.classList.add("active");
 }
-// add event listener to all tab links
-const tablinks = document.getElementsByClassName("tab-link");
-for (let i = 0; i < tablinks.length; i += 1) {
-	tablinks[i].addEventListener("click", activateTab);
-}
+
+export default activateTab;
