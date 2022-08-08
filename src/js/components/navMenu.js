@@ -6,6 +6,7 @@ function activateTab(event) {
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	for (let i = 0; i < tabcontent.length; i += 1) {
 		tabcontent[i].style.display = "none";
+		tabcontent[i].classList.remove("active");
 	}
 
 	// Get all elements with class="tab-link" and remove the class "active"
@@ -13,7 +14,8 @@ function activateTab(event) {
 	for (let i = 0; i < tablinks.length; i += 1) {
 		tablinks[i].classList.remove("active");
 	}
-
+	// add "active" class to selected link
+	event.target.classList.add("active");
 	// Show the current tab, and add an "active" class to the button that opened the tab
 	const activeTab = document.getElementById(id);
 	activeTab.style.display = "block";
