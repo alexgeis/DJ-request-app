@@ -16,6 +16,7 @@
             "indent": "off",
             "no-restricted-syntax": "off",
             "guard-for-in": "off",
-            "quotes":"off"
+            "quotes":"off",
+            "operator-linebreak":"off"
     }
 }
