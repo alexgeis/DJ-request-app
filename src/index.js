@@ -43,12 +43,13 @@ header4.textContent = "Tab 4";
 const text4 = domCreate("p");
 text4.textContent = "This tab content is humble and doesn't have an ego";
 page4.append(header4, text4);
+
 // add event listener to all tab links
-const tablinks = document.getElementsByClassName("tab-link");
-for (let i = 0; i < tablinks.length; i += 1) {
-	tablinks[i].addEventListener("click", activateTab);
-}
+tabLink1.addEventListener("click", activateTab);
+tabLink2.addEventListener("click", activateTab);
+tabLink3.addEventListener("click", activateTab);
+tabLink4.addEventListener("click", activateTab);
 
 // final content append
 const contentEl = document.getElementById("content");
-contentEl.appendChild(navEl, page1, page2, page3, page4);
+contentEl.append(navEl, page1, page2, page3, page4);

@@ -2,7 +2,6 @@ function activateTab(event) {
 	// Create the tab content ID by altering the incoming tab link ID
 	// input: "tab-link-1"  =>  output: "tab1"
 	const id = `tab${event.target.id.split("-")[2]}`;
-
 	// Get all elements with class="tabcontent" and hide them
 	const tabcontent = document.getElementsByClassName("tabcontent");
 	for (let i = 0; i < tabcontent.length; i += 1) {
