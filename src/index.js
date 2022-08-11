@@ -1,9 +1,9 @@
 import "./css/style.scss";
 import createNavMenu from "./js/components/navMenu";
-import createPage1 from "./js/components/page1";
-import createPage2 from "./js/components/page2";
-import createPage3 from "./js/components/page3";
-import createPage4 from "./js/components/page4";
+import createPage1 from "./js/pages/page1";
+import createPage2 from "./js/pages/page2";
+import createPage3 from "./js/pages/page3";
+import createPage4 from "./js/pages/page4";
 
 // nav menu
 const navMenu = createNavMenu();
