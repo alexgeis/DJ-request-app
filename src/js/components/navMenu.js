@@ -1,3 +1,5 @@
+import domCreate from "../helpers/domCreate";
+
 function activateTab(event) {
 	// Create the tab content ID by altering the incoming tab link ID
 	// input: "tab-link-1"  =>  output: "tab1"
@@ -22,4 +24,35 @@ function activateTab(event) {
 	activeTab.classList.add("active");
 }
 
-export default activateTab;
+function createNavMenu() {
+	const tabLink1 = domCreate("a", ["tab-link"], {
+		id: "tab-link-1",
+		href: "#",
+	});
+	tabLink1.textContent = "Link 1";
+	const tabLink2 = domCreate("a", ["tab-link"], {
+		id: "tab-link-2",
+		href: "#",
+	});
+	tabLink2.textContent = "Requests";
+	const tabLink3 = domCreate("a", ["tab-link"], {
+		id: "tab-link-3",
+		href: "#",
+	});
+	tabLink3.textContent = "Link 3";
+	const tabLink4 = domCreate("a", ["tab-link"], {
+		id: "tab-link-4",
+		href: "#",
+	});
+	tabLink4.textContent = "Settings";
+	// add event listener to all tab links
+	tabLink1.addEventListener("click", activateTab);
+	tabLink2.addEventListener("click", activateTab);
+	tabLink3.addEventListener("click", activateTab);
+	tabLink4.addEventListener("click", activateTab);
+	// create nav menu and append
+	const navEl = domCreate("nav", ["nav"]);
+	navEl.append(tabLink1, tabLink2, tabLink3, tabLink4);
+	return navEl;
+}
+export default createNavMenu;
