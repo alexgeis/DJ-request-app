@@ -1,3 +1,7 @@
-node_modules/
+# dependencies
+/node_modules
+# mac nonsense
 .DS_Store/
 /vs_code*
+# api keys
+.env
