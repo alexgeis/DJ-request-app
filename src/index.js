@@ -1,7 +1,9 @@
 import "./css/style.scss";
 import renderApp from "./js/render";
 import fetchSpotifyData from "./js/helpers/spotify";
+import queryify from "./js/helpers/queryify";
 
+queryify();
 renderApp();
 fetchSpotifyData();
 // // TAB GUIDE

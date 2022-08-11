@@ -17,6 +17,8 @@
             "no-restricted-syntax": "off",
             "guard-for-in": "off",
             "quotes":"off",
-            "operator-linebreak":"off"
+            "operator-linebreak":"off",
+            "max-len":"off",
+            "consistent-return":"off"
     }
 }
