@@ -1,18 +1,12 @@
 import "./css/style.scss";
 import domCreate from "./js/helpers/domCreate";
 import createNavMenu from "./js/components/navMenu";
+import createPage1 from "./js/components/page1";
 
 // nav menu
 const navMenu = createNavMenu();
-
-// tab content - nav
 // page 1
-const page1 = domCreate("div", ["tabcontent"], { id: "tab1" });
-const header1 = domCreate("h3");
-header1.textContent = "Tab 1";
-const text1 = domCreate("p");
-text1.textContent = "Some excellent tab 1 content";
-page1.append(header1, text1);
+const page1 = createPage1();
 // page 2
 const page2 = domCreate("div", ["tabcontent"], { id: "tab2" });
 const header2 = domCreate("h3");
