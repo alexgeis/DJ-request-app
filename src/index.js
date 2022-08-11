@@ -1,26 +1,13 @@
 import "./css/style.scss";
-import createNavMenu from "./js/components/navMenu";
-import createPage1 from "./js/pages/page1";
-import createPage2 from "./js/pages/page2";
-import createPage3 from "./js/pages/page3";
-import createPage4 from "./js/pages/page4";
+import renderApp from "./js/render";
 
-// nav menu
-const navMenu = createNavMenu();
-// page 1
-const page1 = createPage1();
-// page 2
-const page2 = createPage2();
-// page 3
-const page3 = createPage3();
-// page 4
-const page4 = createPage4();
+renderApp();
 
-// final content append
-const contentEl = document.getElementById("content");
-contentEl.append(navMenu, page1, page2, page3, page4);
-
-// feed in a number 1-4 to select a default tab on pageload;
+// // TAB GUIDE
+// 1 - Tab 1
+// 2 - Request Page
+// 3 - Tab 3
+// 4 - Settings
 function defaultTabSelect(tabNumber) {
 	const tabContent = `tab${tabNumber}`;
 	const tabLink = `tab-link-${tabNumber}`;
