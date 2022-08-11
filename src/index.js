@@ -1,8 +1,9 @@
 import "./css/style.scss";
 import renderApp from "./js/render";
+import fetchSpotifyData from "./js/helpers/spotify";
 
 renderApp();
-console.log(process.env.API_KEY_TEST);
+fetchSpotifyData();
 // // TAB GUIDE
 // 1 - Tab 1
 // 2 - Request Page
