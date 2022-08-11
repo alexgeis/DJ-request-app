@@ -11,7 +11,7 @@ tabLink2.textContent = "Link 2";
 const tabLink3 = domCreate("a", ["tab-link"], { id: "tab-link-3", href: "#" });
 tabLink3.textContent = "Link 3";
 const tabLink4 = domCreate("a", ["tab-link"], { id: "tab-link-4", href: "#" });
-tabLink4.textContent = "Link 4";
+tabLink4.textContent = "Settings";
 navEl.append(tabLink1, tabLink2, tabLink3, tabLink4);
 // tab content - nav
 // page 1
@@ -39,7 +39,7 @@ page3.append(header3, text3);
 // page 4
 const page4 = domCreate("div", ["tabcontent"], { id: "tab4" });
 const header4 = domCreate("h3");
-header4.textContent = "Tab 4";
+header4.textContent = "Settings";
 const text4 = domCreate("p");
 text4.textContent = "This tab content is humble and doesn't have an ego";
 page4.append(header4, text4);
