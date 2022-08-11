@@ -96,14 +96,25 @@ body {
 from {opacity: 0;}
 to {opacity: 1;}
 }
-
-/* TAB 1 */
-.tabcontent h3 {
+.tab-header {
   margin: 1rem;
   font-size: 2rem;
   text-align: center;
 }
 
+.tab-header ~ * {
+  margin: 1rem auto;
+  width: 70%;
+  font-size: 1rem;
+  text-align: center;
+}
+/* TAB 1 */
+/* TAB 2 */
+/* TAB 3 */
+/* TAB 4 */
+.link-github {
+  text-align: end;
+}
 // @media screen and (max-width: 600px) {
 //   .tabcontent  {
 //     min-height: calc(100vh - 78px);
