@@ -7,7 +7,7 @@ const navEl = domCreate("nav", ["nav"]);
 const tabLink1 = domCreate("a", ["tab-link"], { id: "tab-link-1", href: "#" });
 tabLink1.textContent = "Link 1";
 const tabLink2 = domCreate("a", ["tab-link"], { id: "tab-link-2", href: "#" });
-tabLink2.textContent = "Link 2";
+tabLink2.textContent = "Requests";
 const tabLink3 = domCreate("a", ["tab-link"], { id: "tab-link-3", href: "#" });
 tabLink3.textContent = "Link 3";
 const tabLink4 = domCreate("a", ["tab-link"], { id: "tab-link-4", href: "#" });
@@ -24,9 +24,10 @@ page1.append(header1, text1);
 // page 2
 const page2 = domCreate("div", ["tabcontent"], { id: "tab2" });
 const header2 = domCreate("h3");
-header2.textContent = "Tab 2";
+header2.textContent = "Request";
 const text2 = domCreate("p");
-text2.textContent = "Unparalled synergy in this tab content";
+text2.textContent =
+	"Enter the song, artist, or album to search through Spotify";
 page2.append(header2, text2);
 // page 3
 const page3 = domCreate("div", ["tabcontent"], { id: "tab3" });
