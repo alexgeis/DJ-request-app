@@ -50,6 +50,8 @@ function createNavMenu() {
 	tabLink2.addEventListener("click", activateTab);
 	tabLink3.addEventListener("click", activateTab);
 	tabLink4.addEventListener("click", activateTab);
+	// select tab link 1 by default
+
 	// create nav menu and append
 	const navEl = domCreate("nav", ["nav"]);
 	navEl.append(tabLink1, tabLink2, tabLink3, tabLink4);

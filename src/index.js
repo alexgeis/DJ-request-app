@@ -19,3 +19,8 @@ const page4 = createPage4();
 // final content append
 const contentEl = document.getElementById("content");
 contentEl.append(navMenu, page1, page2, page3, page4);
+
+// select first tab by default
+document.getElementById("tab1").classList.add("active");
+document.getElementById("tab1").style.display = "block";
+document.getElementById("tab-link-1").classList.add("active");
