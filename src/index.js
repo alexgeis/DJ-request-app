@@ -2,19 +2,14 @@ import "./css/style.scss";
 import domCreate from "./js/helpers/domCreate";
 import createNavMenu from "./js/components/navMenu";
 import createPage1 from "./js/components/page1";
+import createPage2 from "./js/components/page2";
 
 // nav menu
 const navMenu = createNavMenu();
 // page 1
 const page1 = createPage1();
 // page 2
-const page2 = domCreate("div", ["tabcontent"], { id: "tab2" });
-const header2 = domCreate("h3");
-header2.textContent = "Request";
-const text2 = domCreate("p");
-text2.textContent =
-	"Enter the song, artist, or album to search through Spotify";
-page2.append(header2, text2);
+const page2 = createPage2();
 // page 3
 const page3 = domCreate("div", ["tabcontent"], { id: "tab3" });
 const header3 = domCreate("h3");
