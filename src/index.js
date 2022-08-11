@@ -20,7 +20,13 @@ const page4 = createPage4();
 const contentEl = document.getElementById("content");
 contentEl.append(navMenu, page1, page2, page3, page4);
 
-// select first tab by default
-document.getElementById("tab1").classList.add("active");
-document.getElementById("tab1").style.display = "block";
-document.getElementById("tab-link-1").classList.add("active");
+// feed in a number 1-4 to select a default tab on pageload;
+function defaultTabSelect(tabNumber) {
+	const tabContent = `tab${tabNumber}`;
+	const tabLink = `tab-link-${tabNumber}`;
+
+	document.getElementById(tabContent).classList.add("active");
+	document.getElementById(tabContent).style.display = "block";
+	document.getElementById(tabLink).classList.add("active");
+}
+defaultTabSelect(2);

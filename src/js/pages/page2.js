@@ -19,11 +19,13 @@ function createPage2() {
 	const searchContainer = domCreate("div", ["search-container"]);
 	searchForm.append(searchInput, searchButton);
 	searchContainer.appendChild(searchForm);
-	// search results
+	// display search results
 	const resultsHeader = domCreate("h4", ["results-header"]);
 	resultsHeader.textContent = "Results";
 	const resultDiv = domCreate("div", ["result-item"]);
 	resultDiv.textContent = "Artist - Song Title";
+	// FETCH SEARCH RESULTS
+
 	// const resultsContainer = domCreate("div", ["results-container"]);
 	// resultsContainer.append();
 	// final page append
