@@ -102,3 +102,9 @@ to {opacity: 1;}
   font-size: 2rem;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .tabcontent  {
+    min-height: calc(100vh - 78px);
+  }
+}
