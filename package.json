@@ -36,6 +36,9 @@
     "webpack-dev-server": "^4.9.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
     "dotenv-webpack": "^8.0.0",
     "eslint": "^8.20.0",
     "eslint-config-airbnb-base": "^15.0.0",
