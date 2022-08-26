@@ -1,11 +1,10 @@
 import "./css/style.scss";
 import renderApp from "./js/render";
-import fetchSpotifyData from "./js/helpers/spotify";
-import queryify from "./js/helpers/queryify";
+// import fetchSpotifyData from "./js/helpers/spotify";
+// fetchSpotifyData();
 
-queryify();
 renderApp();
-fetchSpotifyData();
+
 // // TAB GUIDE
 // 1 - Tab 1
 // 2 - Request Page
