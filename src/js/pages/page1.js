@@ -8,7 +8,7 @@ function createPage1() {
 	const header1 = domCreate("h3", ["tab-header"]);
 	header1.textContent = "Request Queue";
 	// sub header
-	const text1 = domCreate("p");
+	const text1 = domCreate("p", ["tab-sub-header"]);
 	text1.textContent = "display below the current list of requested songs";
 	// text1.textContent +=
 	// 	" *A request never guarantees a play - we'll do our best!";
