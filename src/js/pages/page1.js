@@ -1,4 +1,5 @@
 import domCreate from "../helpers/domCreate";
+import checkOutline from "../../assets/check-outline.png";
 
 function createPage1() {
 	const page1 = domCreate("div", ["tabcontent"], { id: "tab1" });
@@ -14,8 +15,12 @@ function createPage1() {
 	const listEl1 = domCreate("li", ["queue-list-item"], { id: "list-item-1" });
 	listEl1.textContent = "Song title / Artist";
 
+	const statusImg1 = domCreate("img", [], {
+		id: "statusImg1",
+		src: checkOutline,
+	});
 	const statusDiv1 = domCreate("div", ["queue-status"], { id: "queueStatus1" });
-
+	statusDiv1.appendChild(statusImg1);
 	listEl1.appendChild(statusDiv1);
 
 	const listEl2 = domCreate("li", ["queue-list-item"], { id: "list-item-2" });
