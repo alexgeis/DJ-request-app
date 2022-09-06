@@ -29,7 +29,7 @@ function createNavMenu() {
 		id: "tab-link-1",
 		href: "#",
 	});
-	tabLink1.textContent = "Link 1";
+	tabLink1.textContent = "Queue";
 	const tabLink2 = domCreate("a", ["tab-link"], {
 		id: "tab-link-2",
 		href: "#",
