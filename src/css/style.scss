@@ -109,6 +109,19 @@ to {opacity: 1;}
   text-align: center;
 }
 /* TAB 1 */
+
+#queueDiv {
+  border: #000 1px solid;
+  min-height: 60vh;
+  width: 70%;
+}
+.queue-list-item {
+  list-style: none;
+  background-color: aliceblue;
+  color: black;
+  border: #000 1px solid;
+  padding: 1rem 0;
+}
 /* TAB 2 */
 /* TAB 3 */
 /* TAB 4 */
