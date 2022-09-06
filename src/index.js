@@ -18,4 +18,4 @@ function defaultTabSelect(tabNumber) {
 	document.getElementById(tabContent).style.display = "block";
 	document.getElementById(tabLink).classList.add("active");
 }
-defaultTabSelect(3);
+defaultTabSelect(1);
