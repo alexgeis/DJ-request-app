@@ -115,12 +115,18 @@ to {opacity: 1;}
   min-height: 60vh;
   width: 70%;
 }
+#queueList {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-auto-rows: 50px;
+}
 .queue-list-item {
   list-style: none;
   background-color: aliceblue;
   color: black;
   border: #000 1px solid;
   padding: 1rem 0;
+  text-align: left;
 }
 /* TAB 2 */
 /* TAB 3 */

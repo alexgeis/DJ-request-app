@@ -13,6 +13,11 @@ function createPage1() {
 	const ULel = domCreate("ul", [], { id: "queueList" });
 	const listEl1 = domCreate("li", ["queue-list-item"], { id: "list-item-1" });
 	listEl1.textContent = "Song title / Artist";
+
+	const statusDiv1 = domCreate("div", ["queue-status"], { id: "queueStatus1" });
+
+	listEl1.appendChild(statusDiv1);
+
 	const listEl2 = domCreate("li", ["queue-list-item"], { id: "list-item-2" });
 	listEl2.textContent = "Song title / Artist";
 	const listEl3 = domCreate("li", ["queue-list-item"], { id: "list-item-3" });
