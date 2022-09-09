@@ -39,7 +39,7 @@ function createNavMenu() {
 		id: "tab-link-3",
 		href: "#",
 	});
-	tabLink3.textContent = "DJ INFO";
+	tabLink3.textContent = "INFO";
 	const tabLink4 = domCreate("a", ["tab-link"], {
 		id: "tab-link-4",
 		href: "#",
