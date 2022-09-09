@@ -29,12 +29,12 @@ function createNavMenu() {
 		id: "tab-link-1",
 		href: "#",
 	});
-	tabLink1.textContent = "Queue";
+	tabLink1.textContent = "QUEUE";
 	const tabLink2 = domCreate("a", ["tab-link"], {
 		id: "tab-link-2",
 		href: "#",
 	});
-	tabLink2.textContent = "Requests";
+	tabLink2.textContent = "REQUEST";
 	const tabLink3 = domCreate("a", ["tab-link"], {
 		id: "tab-link-3",
 		href: "#",
@@ -44,7 +44,7 @@ function createNavMenu() {
 		id: "tab-link-4",
 		href: "#",
 	});
-	tabLink4.textContent = "Settings";
+	tabLink4.textContent = "SETTINGS";
 	// add event listener to all tab links
 	tabLink1.addEventListener("click", activateTab);
 	tabLink2.addEventListener("click", activateTab);
