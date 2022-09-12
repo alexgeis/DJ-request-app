@@ -1,5 +1,3 @@
-Search and replace keywords: `deployed_link`, `product-screenshot`, `project_description`
-
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
@@ -28,12 +26,12 @@ Search and replace keywords: `deployed_link`, `product-screenshot`, `project_des
 <h3 align="center">DJ Song Request Application</h3>
 
   <p align="center">
-    project_description
+    This web application is intended to field requests for DJs and allow for real-time feedback to the audience on upcoming song status.
     <br />
     <a href="https://github.com/alexgeis/DJ-request-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a class="deployed_link" href="https://github.com/alexgeis/DJ-request-app">View Demo</a>
+    <a class="deployed_link" href="https://alexgeis.github.io/DJ-request-app/">View Demo</a>
     ·
     <a href="https://github.com/alexgeis/DJ-request-app/issues">Report Bug</a>
     ·
@@ -72,9 +70,9 @@ Search and replace keywords: `deployed_link`, `product-screenshot`, `project_des
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-<a class="deployed_link" href="https://example.com">
+<a class="deployed_link" href="https://alexgeis.github.io/DJ-request-app/">
 <p align="center">
-<img id="product-screenshot" src="images/screenshot.png" alt="Product Name Screen Shot"
+<img id="product-screenshot" src="./src/assets/mobile-screenshot.png" alt="DJ song request application mobile screenshot"
 style="display: block;
     margin-left: auto;
     margin-right: auto;
