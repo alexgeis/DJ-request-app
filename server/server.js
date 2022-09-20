@@ -1,23 +1,24 @@
 const express = require("express");
 const path = require("path");
-const webpack = require("webpack");
-const config = require("../webpack.config");
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-const compiler = webpack(config);
+// const webpack = require("webpack");
+// const config = require("../client/webpack.config");
 
-await new Promise((resolve, reject) => {
-	compiler.run((err, res) => {
-		if (err) {
-			console.log(err);
-			return reject(err);
-		}
-		resolve(res);
-	});
-});
+// const compiler = webpack(config);
+
+// await new Promise((resolve, reject) => {
+// 	compiler.run((err, res) => {
+// 		if (err) {
+// 			console.log(err);
+// 			return reject(err);
+// 		}
+// 		resolve(res);
+// 	});
+// });
 
 // middleware example
 // const { clog } = require("./middleware/clog");
@@ -36,18 +37,19 @@ app.use(express.static("public"));
 // EXAMPLE ROUTES
 // GET Route for homepage
 app.get("/", (req, res) => {
-	res.sendFile(path.join(__dirname, "/public/index.html"));
+	// res.sendFile(path.join(__dirname, "../public/index.html"));
+	res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
 
-// GET Route for feedback page
-app.get("/feedback", (req, res) => {
-	res.sendFile(path.join(__dirname, "/public/pages/feedback.html"));
-});
+// // GET Route for feedback page
+// app.get("/feedback", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "/public/pages/feedback.html"));
+// });
 
-// Wildcard route to direct users to a 404 page
-app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "public/pages/404.html"));
-});
+// // Wildcard route to direct users to a 404 page
+// app.get("*", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "public/pages/404.html"));
+// });
 
 app.listen(PORT, () => {
 	console.log(`App listening at http://localhost:${PORT} 🚀`);
