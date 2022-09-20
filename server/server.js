@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+// const something = require("../client/dist/index.bundle")
 
 const PORT = process.env.PORT || 3001;
 
@@ -32,13 +33,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use("/api", api);
 
-app.use(express.static("public"));
-
 // EXAMPLE ROUTES
 // GET Route for homepage
+// console.log({ __dirname }); // '/Users/alex/Documents/CODING/REPOS/DJ-request-app/server'
+// console.log(path.join(__dirname, "..", "client", "dist", "index.html"));
+
 app.get("/", (req, res) => {
 	// res.sendFile(path.join(__dirname, "../public/index.html"));
-	res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+	res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
 });
 
 // // GET Route for feedback page
@@ -50,6 +52,8 @@ app.get("/", (req, res) => {
 // app.get("*", (req, res) => {
 // 	res.sendFile(path.join(__dirname, "public/pages/404.html"));
 // });
+
+app.use(express.static("public"));
 
 app.listen(PORT, () => {
 	console.log(`App listening at http://localhost:${PORT} 🚀`);
