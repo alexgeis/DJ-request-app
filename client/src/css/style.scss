@@ -167,6 +167,68 @@ to {opacity: 1;}
   text-align: center;
 }
 
+/* LIGHT/DARK THEME TOGGLE */
+
+/* The slider */
+.slider,
+.read-toggle-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+/* transition to blue color once checked */
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before,
+.read-toggle-slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+                        /* transition of switch background color */
+input:checked + .slider {
+/* background-color: #2196F3; */
+background-color: #2e2e2e;
+}
+
+input:focus + .slider {
+/* box-shadow: 0 0 1px #2196F3; */
+box-shadow: 0 0 1px #2e2e2e;
+}
+                        /* transition of .slider:before - the toggle switch circle */
+input:checked + .slider:before,
+input:checked + .read-toggle-slider:before {
+-webkit-transform: translateX(17px);
+-ms-transform: translateX(17px);
+transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider.round,
+.read-toggle-slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before,
+.read-toggle-slider.round:before {
+border-radius: 50%;
+}
+
+#light-toggle-text,
+#dark-toggle-text {
+    text-align: center;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
