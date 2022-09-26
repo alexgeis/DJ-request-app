@@ -22,7 +22,26 @@ function createPage4() {
 	const githubLinkContainer = domCreate("div", [], { id: "githubContainer" });
 	githubLinkContainer.appendChild(githubLink);
 
-	page4.append(header4, text4, githubLinkContainer);
+	const lightToggleText = domCreate("div", [], { id: "light-toggle-text" });
+	lightToggleText.textContent = "Light";
+
+	const toggleInput = domCreate("input", [], {
+		id: "theme-toggle",
+		type: "checkbox",
+	});
+	const toggleSlider = domCreate("span", ["slider", "round"]);
+	const toggleSwitch = domCreate("label", ["switch"]);
+	toggleSwitch.append(toggleInput, toggleSlider);
+
+	const darkToggleText = domCreate("div", [], { id: "dark-toggle-text" });
+	darkToggleText.textContent = "Dark";
+
+	const themeContainer = domCreate("div", ["theme"]);
+	themeContainer.append(lightToggleText, toggleSwitch, darkToggleText);
+
+	console.log(themeContainer);
+
+	page4.append(header4, text4, githubLinkContainer, themeContainer);
 	return page4;
 }
 
