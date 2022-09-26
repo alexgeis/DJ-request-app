@@ -171,7 +171,10 @@ to {opacity: 1;}
 
 .theme {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding: 20px 0;
 }
 /* TOGGLE BUTTON */
 .switch {
