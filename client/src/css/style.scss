@@ -170,8 +170,24 @@ to {opacity: 1;}
 /* LIGHT/DARK THEME TOGGLE */
 
 .theme {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+/* TOGGLE BUTTON */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 34px;
+  }
+  
+          /* Hide default HTML checkbox */
+  .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  }
 
 /* The slider */
 .slider {
