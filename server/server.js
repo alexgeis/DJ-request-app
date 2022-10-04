@@ -29,6 +29,7 @@ const app = express();
 // const api = require("./routes/index.js");
 
 // Middleware for parsing JSON and urlencoded form data
+app.use(express.static("../client/dist"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use("/api", api);
