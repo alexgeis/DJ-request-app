@@ -20,6 +20,7 @@
             "operator-linebreak":"off",
             "max-len":"off",
             "consistent-return":"off",
-            "comma-dangle":"off"
+            "comma-dangle":"off",
+            "implicit-arrow-linebreak":"off"
     }
 }
