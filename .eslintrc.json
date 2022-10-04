@@ -11,16 +11,11 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-            "no-console": "off",
-            "no-tabs": "off",
-            "indent": "off",
-            "no-restricted-syntax": "off",
-            "guard-for-in": "off",
-            "quotes":"off",
-            "operator-linebreak":"off",
-            "max-len":"off",
-            "consistent-return":"off",
-            "comma-dangle":"off",
-            "implicit-arrow-linebreak":"off"
+        "no-tabs":"off",
+        "indent":"off",
+        "implicit-arrow-linebreak":"off",
+        "quotes":"off",
+        "no-console":"off",
+        "import/no-unresolved":"off"
     }
 }

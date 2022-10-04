@@ -1,10 +1,8 @@
 const express = require("express");
 const path = require("path");
-// const something = require("../client/dist/index.bundle")
-
-const PORT = process.env.PORT || 3001;
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 // const webpack = require("webpack");
 // const config = require("../client/webpack.config");
@@ -32,6 +30,7 @@ const app = express();
 app.use(express.static("../client/dist"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// app.use(express.static("public"));
 // app.use("/api", api);
 
 // EXAMPLE ROUTES
@@ -40,7 +39,7 @@ app.use(express.urlencoded({ extended: true }));
 // console.log(path.join(__dirname, "..", "client", "dist", "index.html"));
 
 app.get("/", (req, res) => {
-	// res.sendFile(path.join(__dirname, "../public/index.html"));
+	// res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 	res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
 });
 
@@ -53,8 +52,6 @@ app.get("/", (req, res) => {
 // app.get("*", (req, res) => {
 // 	res.sendFile(path.join(__dirname, "public/pages/404.html"));
 // });
-
-app.use(express.static("public"));
 
 app.listen(PORT, () => {
 	console.log(`App listening at http://localhost:${PORT} 🚀`);

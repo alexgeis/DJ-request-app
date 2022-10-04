@@ -4,11 +4,12 @@
   "description": "Search and replace keywords: `deployed_link`, `product-screenshot`, `project_description`",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest",
-    "watch": "webpack --watch",
-    "start": "webpack serve --open",
     "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack-dev-server",
+    "start": "webpack serve --open",
+    "test": "jest",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
