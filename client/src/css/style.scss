@@ -147,12 +147,36 @@ to {opacity: 1;}
     pointer-events: none;
     opacity: 0.5;
 }
+
 /* TAB 2 */
 #searchForm {
   width: 70%;
   margin: 1rem auto;
   text-align: center;
 }
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.login-container img {
+  max-width: 90%;
+}
+.login-link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  background-color: #1db954;
+  color: #000;
+}
+.login-link:hover {
+  background-color: white;
+  border-color: #1db954;
+  color: #1db954;
+}
+
 /* TAB 3 */
 #insta-div {
   width: 70%;

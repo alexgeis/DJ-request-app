@@ -1,4 +1,5 @@
 import domCreate from "../helpers/domCreate";
+import spottyImg from "../../assets/Spotify_Logo_RGB_White.png";
 
 function createPage2() {
 	const page2 = domCreate("div", ["tabcontent"], { id: "tab2" });
@@ -21,6 +22,13 @@ function createPage2() {
 	searchForm.append(searchInput, searchButton);
 	searchContainer.appendChild(searchForm);
 
+	// spotify login button
+	const loginDiv = domCreate("div", ["login-container"]);
+	const spotifyImg = domCreate("img", [], { src: spottyImg });
+	const spotifyLink = domCreate("a", ["login-link"]);
+	spotifyLink.textContent = "Login to Spotify";
+	loginDiv.append(spotifyImg, spotifyLink);
+
 	// display search results
 	const resultsHeader = domCreate("h4", ["results-header"]);
 	resultsHeader.textContent = "Results";
@@ -32,7 +40,7 @@ function createPage2() {
 	// const resultsContainer = domCreate("div", ["results-container"]);
 	// resultsContainer.append();
 	// final page append
-	page2.append(header2, text2, searchContainer);
+	page2.append(header2, text2, searchContainer, loginDiv);
 	return page2;
 }
 

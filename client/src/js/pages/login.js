@@ -1,5 +1,5 @@
 import domCreate from "../helpers/domCreate";
-import spottyImg from "../../assets/assets/Spotify_Logo_RGB_White.png";
+// import spottyImg from "../../assets/assets/Spotify_Logo_RGB_White.png";
 
 function createLoginPage() {
 	const content = domCreate("div", ["tabcontent"], { id: "loginPage" });
@@ -10,12 +10,12 @@ function createLoginPage() {
 	// 	"Enter the song, artist, or album to search through Spotify";
 
 	// login section
-	const loginDiv = domCreate("div", ["loginContainer"]);
-	const spotifyImg = domCreate("img", [], { src: spottyImg });
-	const spotifyLink = domCreate("a", ["loginContainer"]);
-	loginDiv.append(spotifyImg, spotifyLink);
+	// const loginDiv = domCreate("div", ["login-container"]);
+	// const spotifyImg = domCreate("img", [], { src: spottyImg });
+	// const spotifyLink = domCreate("a", ["login-link"]);
+	// loginDiv.append(spotifyImg, spotifyLink);
 
-	content.append(header, loginDiv);
+	// content.append(header, loginDiv);
 	return content;
 }
 
