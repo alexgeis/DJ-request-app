@@ -1,35 +1,41 @@
 const express = require("express");
 const path = require("path");
+// SPOTIFY REQS
+// const request = require('request'); // "Request" library
+// const cors = require("cors");
+// const querystring = require('querystring');
+// const cookieParser = require("cookie-parser");
+
+// const client_id = 'CLIENT_ID'; // Your client id
+// const client_secret = 'CLIENT_SECRET'; // Your secret
+// const redirect_uri = 'REDIRECT_URI'; // Your redirect uri
+
+/**
+ * Generates a random string containing numbers and letters
+ * @param  {number} length The length of the string
+ * @return {string} The generated string
+ */
+// const generateRandomString = function (length) {
+// 	let text = "";
+// 	const possible =
+// 		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+// 	for (let i = 0; i < length; i++) {
+// 		text += possible.charAt(Math.floor(Math.random() * possible.length));
+// 	}
+// 	return text;
+// };
+
+// const stateKey = "spotify_auth_state";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-
-// const webpack = require("webpack");
-// const config = require("../client/webpack.config");
-
-// const compiler = webpack(config);
-
-// await new Promise((resolve, reject) => {
-// 	compiler.run((err, res) => {
-// 		if (err) {
-// 			console.log(err);
-// 			return reject(err);
-// 		}
-// 		resolve(res);
-// 	});
-// });
-
-// middleware example
-// const { clog } = require("./middleware/clog");
-// Import custom middleware, "cLog"
-// app.use(clog);
-// API example
-// const api = require("./routes/index.js");
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.static("../client/dist"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// app.use(cors()).use(cookieParser());
 // app.use(express.static("public"));
 // app.use("/api", api);
 

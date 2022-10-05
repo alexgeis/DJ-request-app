@@ -19,6 +19,7 @@
         "import/no-unresolved":"off",
         "import/no-named-as-default":"off",
         "import/no-named-as-default-member":"off",
-        "operator-linebreak":"off"
+        "operator-linebreak":"off",
+        "no-plusplus":"off"
     }
 }
