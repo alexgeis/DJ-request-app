@@ -16,6 +16,9 @@
         "implicit-arrow-linebreak":"off",
         "quotes":"off",
         "no-console":"off",
-        "import/no-unresolved":"off"
+        "import/no-unresolved":"off",
+        "import/no-named-as-default":"off",
+        "import/no-named-as-default-member":"off",
+        "operator-linebreak":"off"
     }
 }

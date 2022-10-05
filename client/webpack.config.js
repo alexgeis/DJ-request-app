@@ -5,23 +5,20 @@ const Dotenv = require("dotenv-webpack");
 
 module.exports = {
 	mode: "development",
-	entry: {
-		index: "./src/index.js",
-		// print: "./src/otherFunction.js",s
-	},
+	entry: "./src/js/index.js",
 	devtool: "inline-source-map",
 	devServer: {
 		static: "./dist",
 	},
 	output: {
-		filename: "[name].bundle.js",
+		filename: "bundle.js",
 		path: path.resolve(__dirname, "dist"),
 		clean: true,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: "Todo List",
-			template: "src/index.html",
+			template: "./src/index.html",
 		}),
 		new MiniCssExtractPlugin(),
 		// access to environment variables
