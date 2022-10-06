@@ -31,7 +31,7 @@
     <a href="https://github.com/alexgeis/DJ-request-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a class="deployed_link" href="https://alexgeis.github.io/DJ-request-app/">View Demo</a>
+    <a class="deployed_link" href="https://dj-requests.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/alexgeis/DJ-request-app/issues">Report Bug</a>
     ·
@@ -70,7 +70,7 @@
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-<a class="deployed_link" href="https://alexgeis.github.io/DJ-request-app/">
+<a class="deployed_link" href="https://dj-requests.netlify.app/">
 <p align="center">
 <img id="product-screenshot" src="./src/assets/mobile-screenshot.png" alt="DJ song request application mobile screenshot"
 style="display: block;
