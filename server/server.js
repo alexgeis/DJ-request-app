@@ -9,7 +9,7 @@ const path = require("path");
 // const client_id = 'CLIENT_ID'; // Your client id
 // const client_secret = 'CLIENT_SECRET'; // Your secret
 // const redirect_uri = 'REDIRECT_URI'; // Your redirect uri
-
+console.log(arguments);
 /**
  * Generates a random string containing numbers and letters
  * @param  {number} length The length of the string
