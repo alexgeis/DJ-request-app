@@ -63,7 +63,10 @@ const SiteWrapper = ({ children }: SiteWrapperProps) => {
 						className="nav-item"
 						onClick={closeMenu}
 					>
-						<Home size={20} />
+						<Home
+							size={20}
+							color={"#fafafa"}
+						/>
 						Home
 					</a>
 					<a
@@ -71,7 +74,10 @@ const SiteWrapper = ({ children }: SiteWrapperProps) => {
 						className="nav-item"
 						onClick={closeMenu}
 					>
-						<User size={20} />
+						<User
+							size={20}
+							color={"#fafafa"}
+						/>
 						About
 					</a>
 					<a
@@ -79,7 +85,10 @@ const SiteWrapper = ({ children }: SiteWrapperProps) => {
 						className="nav-item"
 						onClick={closeMenu}
 					>
-						<Settings size={20} />
+						<Settings
+							size={20}
+							color={"#fafafa"}
+						/>
 						Services
 					</a>
 					<a
@@ -87,7 +96,10 @@ const SiteWrapper = ({ children }: SiteWrapperProps) => {
 						className="nav-item"
 						onClick={closeMenu}
 					>
-						<Mail size={20} />
+						<Mail
+							size={20}
+							color={"#fafafa"}
+						/>
 						Contact
 					</a>
 				</div>
